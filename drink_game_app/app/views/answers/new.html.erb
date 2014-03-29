@@ -1,0 +1,9 @@
+<h1>Answer questions now!</h1>
+
+<%= form_for(@answer) do |f| %>
+  <%= f.label(@question.original_question) %>
+  <%= f.text_field(:saved_answer) %>
+  <%= f.hidden_field(:question_id, :value => @question.id) %>
+  <%= f.submit %>
+
+  <% end %>

@@ -11,14 +11,17 @@
  <p><%= current_user.age %></p>
  <p><%= current_user.gender %></p>
 
+ <a href="/answers/new">Answer Questions</a>
+
  <a href="#">Play Game</a>
 
 <a href="/logout">Logout</a>
 
  <% else %>
 
- <h1>You should sign up!</h1>
+ <h1>You should log in or sign up!</h1>
 
  <a href="/session/new">Login</a>
+ <a href="/users/new">Sign Up</a>
 
  <% end %>
