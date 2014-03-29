@@ -1,0 +1,12 @@
+<h1>Drinking Game Dating App</h1>
+
+<% if logged_in? %>
+
+  <p>Hey, <%= current_user.name %>.
+    <a href="/logout">Logout</a>
+  </p>
+
+
+  <img src="<%= current_user.picture_url %>">
+
+ <% end %>
