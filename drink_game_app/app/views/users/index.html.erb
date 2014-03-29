@@ -2,11 +2,23 @@
 
 <% if logged_in? %>
 
-  <p>Hey, <%= current_user.name %>.
-    <a href="/logout">Logout</a>
-  </p>
-
+  <p>Hey, <%= current_user.name %>.</p>
 
   <img src="<%= current_user.picture_url %>">
+
+ <br>
+
+ <p><%= current_user.age %></p>
+ <p><%= current_user.gender %></p>
+
+ <a href="#">Play Game</a>
+
+<a href="/logout">Logout</a>
+
+ <% else %>
+
+ <h1>You should sign up!</h1>
+
+ <a href="/session/new">Login</a>
 
  <% end %>

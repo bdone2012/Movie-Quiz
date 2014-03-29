@@ -11,6 +11,7 @@ DrinkGameApp::Application.routes.draw do
 
   get "/session/new" => "session#new"
   post "/session" => "session#create"
+  get "/logout" => "session#logout"
 
 
   # Example of regular route:
