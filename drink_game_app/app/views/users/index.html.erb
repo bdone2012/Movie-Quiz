@@ -13,7 +13,10 @@
 
  <a href="/answers/new">Answer Questions</a>
 
- <a href="#">Play Game</a>
+<p><%= current_user.questions[0].original_question %></p>
+<p><%= current_user.answers[0].saved_answer %></p>
+
+ <a href="/answers">Play Game</a>
 
 <a href="/logout">Logout</a>
 

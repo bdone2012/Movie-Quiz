@@ -13,10 +13,16 @@ class AnswersController < ApplicationController
       redirect_to("/users")
     end
   end
+
+  def show
+    @answer
+  end
+
     private
 
     def answer_params
       params.require(:answer).permit(:saved_answer)
     end
+
 
 end

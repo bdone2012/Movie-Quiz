@@ -45,3 +45,13 @@ fav_80s_flick = Question.create({
   original_question: "What is your favorite embarrassing 80s movie?"
   })
 
+ninja_turtles = Answer.new({ saved_answer: "Ninja Turtles", question_id: "1"})
+breaking_bad = Answer.new({ saved_answer: "Breaking Bad", question_id: "1"})
+tables = Answer.new({ saved_answer: "Tables", question_id: "1"})
+
+bill_murray.answers << ninja_turtles
+nicolas_cage.answers << breaking_bad
+vanilla_ice.answers << tables
+
+
+
