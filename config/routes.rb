@@ -8,13 +8,15 @@ DrinkGameApp::Application.routes.draw do
   resources :users
   resources :answers
   resources :questions
-  resources :games
 
+  # game routes
+  get "/play" => "games#new"
+  post "/play" => "games#finish"
+
+  # other routes
   get "/session/new" => "session#new"
   post "/session" => "session#create"
   get "/logout" => "session#logout"
-  get "/answer" => "session#new"
-  get "/games" => "session#new"
 
 
   # Example of regular route:

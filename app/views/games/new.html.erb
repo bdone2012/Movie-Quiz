@@ -1,3 +1,18 @@
-<h1>You lose, waaaawaaaaaa.</h1>
+<h1>Let's Play</h1>
 
-<a href="/answers">Play Again</a>
+<!-- Puts all user info into the variable so that it stores the ids so that I can access it afterwards -->
+
+<!-- getting the picture to display -->
+<img src="<%= @correct_answer.user.picture_url %>">
+
+<p>We asked the person above: "<%= @question.original_question %>"<br><br>What do you think they answered?</p>
+
+<%= form_tag do %>
+  <% @shuffled.each do |answer| %>
+    <%= radio_button_tag("users_choice", answer.id) %>
+    <%= label_tag "users_choice_#{answer.id}", answer.saved_answer %>
+  <% end %>
+  <%= submit_tag "Submit Choice" %>
+<% end %>
+
+
