@@ -41,17 +41,48 @@ vanilla_ice = User.create({
   password_confirmation: "password"
   })
 
+brian_donegan = User.create({
+  name: "Brian Donegan",
+  age: "26",
+  gender: "Male",
+  picture_url: "http://placebear.com/200/300",
+  email: "bdone2012@gmail.com",
+  password: "password",
+  password_confirmation: "password"
+  })
+
+cat = User.create({
+  name: "Cat",
+  age: "10",
+  gender: "female",
+  picture_url: "http://placekitten.com/600/400",
+  email: "kitty@cat.com",
+  password: "password",
+  password_confirmation: "password"
+  })
+
+
+
+
 fav_80s_flick = Question.create({
   original_question: "What is your favorite embarrassing 80s movie?"
   })
 
+fav_80s_flick = Question.create({
+  original_question: "What is your favorite embarrassing 80s movie?"
+  })
+
+
 ninja_turtles = Answer.new({ saved_answer: "Ninja Turtles", question_id: "1"})
 breaking_bad = Answer.new({ saved_answer: "Breaking Bad", question_id: "1"})
 tables = Answer.new({ saved_answer: "Tables", question_id: "1"})
+barracuda = Answer.new({ saved_answer: "Barracuda", question_id: "1"})
+cat_tails = Answer.new({ saved_answer: "Cat Tails", question_id: "1"})
 
 bill_murray.answers << ninja_turtles
 nicolas_cage.answers << breaking_bad
 vanilla_ice.answers << tables
-
+brian_donegan.answers << barracuda
+cat.answers << cat_tails
 
 
