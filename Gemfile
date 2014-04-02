@@ -40,7 +40,11 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'pry-rails'
+  gem 'rails-erd'
 end
+
+gem 'rails_12factor', group: :production
+ruby "2.1.0"
 
 
 # Use ActiveModel has_secure_password

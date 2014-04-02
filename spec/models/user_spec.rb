@@ -1,8 +1,12 @@
 require '../spec_helper'
 
 describe User do
+  it { should validate_presence_of(:answers) } }
+  it { should have_many(:answers) }
+  it { should have_many(:questions).through(:answers)}
 
-  it { should have_many(:questions) }
+  it { should validate_presence_of(:name) }
+
 
   it "must have a unique password" do
     user = User.create(
