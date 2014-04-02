@@ -32,11 +32,16 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'httparty'
+
+# gem 'JSON'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'pry-rails'
 end
+
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'

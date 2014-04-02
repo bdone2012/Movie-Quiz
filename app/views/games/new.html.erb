@@ -15,4 +15,24 @@
   <%= submit_tag "Submit Choice" %>
 <% end %>
 
+<br>
+
+<% @correct_response.to_json %>
+<% @correct_response.body %>
+<% party = JSON.parse(@correct_response) %>
+<img src="<%= party["Poster"] %>">
+
+<% @incorrect_responses.to_json %>
+<% @incorrect_responses.body %>
+<% party = JSON.parse(@incorrect_responses) %>
+<img src="<%= party["Poster"] %>">
+
+<% @incorrect_response.to_json %>
+<% @incorrect_response.body %>
+<% party = JSON.parse(@incorrect_response) %>
+<img src="<%= party["Poster"] %>">
+
+
+
+
 

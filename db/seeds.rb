@@ -25,7 +25,7 @@ nicolas_cage = User.create({
   name: "Nicolas Cage",
   age: "56",
   gender: "Male",
-  picture_url: "http://placecage.com/c/200/300",
+  picture_url: "https://drupal.org/files/issues/cage.jpeg",
   email: "nicolas@cage.com",
   password: "password",
   password_confirmation: "password"
@@ -61,6 +61,25 @@ cat = User.create({
   password_confirmation: "password"
   })
 
+justin_bieber = User.create({
+  name: "Justin Bieber",
+  age: "21",
+  gender: "Male",
+  picture_url: "http://wac.450f.edgecastcdn.net/80450F/popcrush.com/files/2013/06/jb-dog.jpg",
+  email: "justin@bieber.com",
+  password: "password",
+  password_confirmation: "password"
+  })
+
+cary_grant = User.create({
+  name: "Cary Grant",
+  age: "deceased",
+  gender: "Male",
+  picture_url: "http://i.telegraph.co.uk/multimedia/archive/02107/cross_grant_2107101i.jpg",
+  email: "cary@grant.com",
+  password: "password",
+  password_confirmation: "password"
+  })
 
 
 
@@ -68,21 +87,26 @@ fav_80s_flick = Question.create({
   original_question: "What is your favorite embarrassing 80s movie?"
   })
 
-fav_80s_flick = Question.create({
-  original_question: "What is your favorite embarrassing 80s movie?"
+fav_dance_flick = Question.create({
+  original_question: "What is your favorite dance movie?"
   })
 
 
-ninja_turtles = Answer.new({ saved_answer: "Ninja Turtles", question_id: "1"})
-breaking_bad = Answer.new({ saved_answer: "Breaking Bad", question_id: "1"})
-tables = Answer.new({ saved_answer: "Tables", question_id: "1"})
-barracuda = Answer.new({ saved_answer: "Barracuda", question_id: "1"})
-cat_tails = Answer.new({ saved_answer: "Cat Tails", question_id: "1"})
+alien = Answer.new({ saved_answer: "Alien", question_id: "1"})
+gremlins = Answer.new({ saved_answer: "Gremlins", question_id: "1"})
+tootsie = Answer.new({ saved_answer: "Tootsie", question_id: "1"})
+highlander = Answer.new({ saved_answer: "Highlander", question_id: "1"})
+popeye = Answer.new({ saved_answer: "Popeye", question_id: "1"})
+heathers = Answer.new({ saved_answer: "Heathers", question_id: "1"})
+casablanca = Answer.new({ saved_answer: "Casablanca", question_id: "1"})
 
-bill_murray.answers << ninja_turtles
-nicolas_cage.answers << breaking_bad
-vanilla_ice.answers << tables
-brian_donegan.answers << barracuda
-cat.answers << cat_tails
+bill_murray.answers << alien
+nicolas_cage.answers << tootsie
+vanilla_ice.answers << gremlins
+brian_donegan.answers << highlander
+cat.answers << popeye
+justin_bieber.answers << heathers
+cary_grant.answers << casablanca
+
 
 
