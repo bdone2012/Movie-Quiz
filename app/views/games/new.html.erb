@@ -7,6 +7,7 @@
 
 <p>We asked the person above: "<%= @question.original_question %>"<br><br>What do you think they answered?</p>
 
+<!-- Button choices -->
 <%= form_tag do %>
   <% @shuffled.each do |answer| %>
     <%= radio_button_tag("users_choice", answer.id) %>
@@ -17,6 +18,7 @@
 
 <br>
 
+<!-- That API stuff -->
 <% @correct_response.to_json %>
 <% @correct_response.body %>
 <% party = JSON.parse(@correct_response) %>
