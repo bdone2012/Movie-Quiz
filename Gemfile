@@ -43,7 +43,7 @@ group :development, :test do
   gem 'rails-erd'
 end
 
-gem 'rails_12factor', group: :production
+
 ruby "2.1.0"
 
 
