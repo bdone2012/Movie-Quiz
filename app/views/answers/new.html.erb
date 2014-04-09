@@ -1,11 +1,21 @@
-<h1>Answer questions now!</h1>
+<body>
 
-<%= form_for(@answer) do |f| %>
-  <%= f.label(@question.original_question) %>
-  <%= f.text_field(:saved_answer) %>
-  <%= f.hidden_field(:question_id, :value => @question.id) %>
-  <%= f.submit %>
+  <header>
+    <h1>Answer questions now!</h1>
+  </header>
 
-  <% end %>
+  <%= form_for(@answer) do |f| %>
+    <%= f.label(@question.original_question) %>
+    <%= f.text_field(:saved_answer) %>
+    <%= f.hidden_field(:question_id, :value => @question.id) %>
+    <%= f.submit %>
 
+    <% end %>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/users">Profile</a>
+    </nav>
+
+</body>
 
