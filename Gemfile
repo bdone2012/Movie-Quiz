@@ -41,6 +41,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'pry-rails'
   gem 'rails-erd'
+  gem 'rspec-core', '2.14.8'
 end
 
 

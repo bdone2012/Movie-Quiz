@@ -160,6 +160,7 @@ DEPENDENCIES
   pry-rails
   rails (= 4.0.4)
   rails-erd
+  rspec-core (= 2.14.8)
   rspec-rails
   sass-rails (~> 4.0.2)
   sdoc

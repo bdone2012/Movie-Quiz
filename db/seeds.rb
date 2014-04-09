@@ -84,11 +84,7 @@ cary_grant = User.create({
 
 
 fav_80s_flick = Question.create({
-  original_question: "What is your favorite embarrassing 80s movie?"
-  })
-
-fav_dance_flick = Question.create({
-  original_question: "What is your favorite dance movie?"
+  original_question: "What is your favorite 80s movie?"
   })
 
 
