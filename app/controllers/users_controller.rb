@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @saved_answer = User.find(1)
+
   end
 
   def new
