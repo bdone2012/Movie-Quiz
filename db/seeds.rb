@@ -88,13 +88,13 @@ fav_80s_flick = Question.create({
   })
 
 
-alien = Answer.new({ saved_answer: "Alien", question_id: "1"})
-gremlins = Answer.new({ saved_answer: "Gremlins", question_id: "1"})
-tootsie = Answer.new({ saved_answer: "Tootsie", question_id: "1"})
-highlander = Answer.new({ saved_answer: "Highlander", question_id: "1"})
-popeye = Answer.new({ saved_answer: "Popeye", question_id: "1"})
-heathers = Answer.new({ saved_answer: "Heathers", question_id: "1"})
-casablanca = Answer.new({ saved_answer: "Casablanca", question_id: "1"})
+alien = Answer.new({ saved_answer: "Alien", question_id: fav_80s_flick.id})
+gremlins = Answer.new({ saved_answer: "Gremlins", question_id: fav_80s_flick.id})
+tootsie = Answer.new({ saved_answer: "Tootsie", question_id: fav_80s_flick.id})
+highlander = Answer.new({ saved_answer: "Highlander", question_id: fav_80s_flick.id})
+popeye = Answer.new({ saved_answer: "Popeye", question_id: fav_80s_flick.id})
+heathers = Answer.new({ saved_answer: "Heathers", question_id: fav_80s_flick.id})
+casablanca = Answer.new({ saved_answer: "Casablanca", question_id: fav_80s_flick.id})
 
 bill_murray.answers << alien
 nicolas_cage.answers << tootsie
