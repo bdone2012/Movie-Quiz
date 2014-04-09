@@ -44,6 +44,9 @@ group :development, :test do
   gem 'rspec-core', '2.14.8'
 end
 
+# Use to enable features such as static asset serving and logging on Heroku
+gem 'rails_12factor', group: :production
+
 
 ruby "2.1.0"
 
