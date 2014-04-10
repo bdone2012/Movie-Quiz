@@ -83,18 +83,18 @@ cary_grant = User.create({
 
 
 
-fav_80s_flick = Question.create({
+@fav_80s_flick = Question.create({
   original_question: "What is your favorite 80s movie?"
   })
 
 
-alien = Answer.new({ saved_answer: "Alien", question_id: fav_80s_flick.id})
-gremlins = Answer.new({ saved_answer: "Gremlins", question_id: fav_80s_flick.id})
-tootsie = Answer.new({ saved_answer: "Tootsie", question_id: fav_80s_flick.id})
-highlander = Answer.new({ saved_answer: "Highlander", question_id: fav_80s_flick.id})
-popeye = Answer.new({ saved_answer: "Popeye", question_id: fav_80s_flick.id})
-heathers = Answer.new({ saved_answer: "Heathers", question_id: fav_80s_flick.id})
-casablanca = Answer.new({ saved_answer: "Casablanca", question_id: fav_80s_flick.id})
+alien = Answer.new({ saved_answer: "Alien", question_id: @fav_80s_flick.id})
+gremlins = Answer.new({ saved_answer: "Gremlins", question_id: @fav_80s_flick.id})
+tootsie = Answer.new({ saved_answer: "Tootsie", question_id: @fav_80s_flick.id})
+highlander = Answer.new({ saved_answer: "Highlander", question_id: @fav_80s_flick.id})
+popeye = Answer.new({ saved_answer: "Popeye", question_id: @fav_80s_flick.id})
+heathers = Answer.new({ saved_answer: "Heathers", question_id: @fav_80s_flick.id})
+casablanca = Answer.new({ saved_answer: "Casablanca", question_id: @fav_80s_flick.id})
 
 bill_murray.answers << alien
 nicolas_cage.answers << tootsie
