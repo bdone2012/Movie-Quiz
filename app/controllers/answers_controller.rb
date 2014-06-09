@@ -5,7 +5,7 @@ end
 
   def new
     @answer = Answer.new
-    @question = Question.find(1)
+    @question = Question.find(9)
   end
 
 
